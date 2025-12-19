@@ -1,11 +1,11 @@
 import githubIcon from "../assets/images/icons/github.png";
 import emailIcon from "../assets/images/icons/gmail.png";
 import linkedinIcon from "../assets/images/icons/linkedin.png";
-import '../index.scss';
+import '../index.css';
 
 function Footer() {
   return (
-    <footer className="bg-primary-100 shadow-md p-4 px-[150px] text-center text-sm text-primary-700">
+    <footer className="bg-[var(--primary-100)]">
       <nav className="footer-nav">
         <a
           className="nav-link"

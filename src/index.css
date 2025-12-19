@@ -13,17 +13,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-$primary-700: #1C185F;
-$primary-600: #3730A3;
-$primary-500: #5454CD;
-$primary-400: #817EDD;
-$primary-300: #AAA8E9;
-$primary-200: #DAD3FE;
-$primary-100: #F0F0FB;
-$gray-600: #232328;
-$gray-100: #d5d5d8;
+  --primary-700: #1C185F;
+  --primary-600: #3730A3;
+  --primary-500: #5454CD;
+  --primary-400: #817EDD;
+  --primary-300: #AAA8E9;
+  --primary-200: #DAD3FE;
+  --primary-100: #F0F0FB;
+  --gray-600: #232328;
+  --gray-100: #d5d5d8;
+}
 
 a {
   font-weight: 500;
