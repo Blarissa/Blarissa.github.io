@@ -9,14 +9,18 @@ import angularIcon from "../assets/images/icons/angular.png";
 import bootstrapIcon from "../assets/images/icons/bootstrap.png";
 import mysqlIcon from "../assets/images/icons/mysql.png";
 import postgresqlIcon from "../assets/images/icons/postgresql.png";
-import tailwindcssIcon from "../assets/images/icons/tailwindcss.png";
+import tailwindcssIcon from "../assets/images/icons/tailwind-css.png";
 import springBootIcon from "../assets/images/icons/spring-boot.png";
 import javaIcon from "../assets/images/icons/java.png";
 import pythonIcon from "../assets/images/icons/python.png";
 import dotnetIcon from "../assets/images/icons/dotnet.png";
 import cSharpIcon from "../assets/images/icons/c-sharp.png";
 import awsIcon from "../assets/images/icons/aws.png";
-
+import dorothyIcon from "../assets/images/icons/logo_dorothy.png";
+import arteIcon from "../assets/images/icons/arte.png";
+import bibliotecaIcon from "../assets/images/icons/biblioteca.png";
+import setasIcon from "../assets/images/icons/setas.png";
+import denteIcon from "../assets/images/icons/dente.png";
 
 export interface Contact {
   name: string;
@@ -110,7 +114,7 @@ export const curriculoLarissa: Resume = {
         "Tailwind CSS",
       ],
       link: "[https://github.com/Blarissa/trabalho-final-larissa-brasil](https://github.com/Blarissa/trabalho-final-larissa-brasil)",
-      icon: "setas.png",
+      icon: setasIcon,
     },
     {
       name: "NFT Art Tokenization DApp",
@@ -128,7 +132,7 @@ export const curriculoLarissa: Resume = {
         "Ethereum",
         ],
         link: "https://github.com/Blarissa/DApp-Tokenizacao-Arte-AmendoeiraEmFlor",
-      icon: "arte.png",
+      icon: arteIcon,
     },
     {
       name: "Dorothy Piauí Project Website",
@@ -137,7 +141,7 @@ export const curriculoLarissa: Resume = {
         "women in technology through courses, workshops, and events.",
       technologies: ["HTML", "CSS", "JavaScript", "Angular"],
       link: "https://github.com/Dorothy-Piaui/Dorothy-Piaui.github.io",
-      icon: "logo_dorothy.png",
+      icon: dorothyIcon,
     },
     {
       name: "Library System",
@@ -146,7 +150,7 @@ export const curriculoLarissa: Resume = {
         "registration of books and readers, loan and return control with a search system.",
       technologies: ["C#", ".NET"],
       link: "https://github.com/Blarissa/Biblioteca",
-      icon: "biblioteca.png",
+      icon: bibliotecaIcon,
     },
     {
       name: "Dental Clinic System",
@@ -155,7 +159,7 @@ export const curriculoLarissa: Resume = {
         "using Entity Framework, implementing object-relational mapping with LINQ and PostgreSQL.",
       technologies: ["C#", ".NET", "Entity Framework", "PostgreSQL", "LINQ"],
       link: "https://github.com/Blarissa/PersistenciaConsultorioOdontologico",
-      icon: "dente.png",
+      icon: denteIcon,
     },
   ],
 };

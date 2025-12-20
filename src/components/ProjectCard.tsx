@@ -28,7 +28,7 @@ function ProjectCard({ title, projects }: { title: string; projects: Project[] }
 
                 <div className="flex justify-center items-center">
                   <img
-                    src={`/src/assets/images/icons/${project.icon}`}
+                    src={project.icon}
                     alt={project.name}
                     className="w-16 h-16 sm:w-20 sm:h-20 rounded-full shadow-md"
                   ></img>

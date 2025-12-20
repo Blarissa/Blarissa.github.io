@@ -58,7 +58,7 @@ function App() {
           <h2 className="section-title">technologies</h2>
           <div className="flex flex-wrap w-full items-center justify-center gap-2 sm:gap-4">
               {curriculoLarissa.technical_skills.map((skill, index) => (
-                <img key={index} src={`/src/assets/images/icons/${skill.icon}`} alt={skill.technology} className="icon-img" />
+                <img key={index} src={skill.icon} alt={skill.technology} className="icon-img" />
               ))}
           </div>
         </div>
