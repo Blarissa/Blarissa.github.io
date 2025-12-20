@@ -5,37 +5,21 @@ import '../index.css';
 
 function Footer() {
   return (
-    <footer className="bg-[var(--primary-100)]">
-      <nav className="footer-nav">
-        <a
-          className="nav-link"
-          href="https://github.com/Blarissa"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
-        >
-          <img className="inline w-6 h-6 align-middle" src={githubIcon} alt="GitHub Icon" width="32" height="32" />
-        </a>
-        <a
-          className="nav-link"
-          href="mailto:larissabrasil009@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Email"
-        >
-          <img className="inline w-6 h-6 align-middle" src={emailIcon} alt="Email Icon" width="32" height="32" />
-        </a>
-        <a
-          className="nav-link"
-          href="https://www.linkedin.com/in/brasil-larissa/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <img className="inline w-6 h-6 align-middle" src={linkedinIcon} alt="LinkedIn Icon" width="32" height="32" />
-        </a>
-      </nav>
-      <p>© {new Date().getFullYear()} Blarissa. All rights reserved.</p>
+    <footer
+        className="bg-[var(--primary-100)] shadow-md p-4 px-[150px] text-center text-sm text-[var(--primary-700)]">
+        <nav className="nav">
+            <a className="nav-link" href="https://github.com/Blarissa" target="_blank">
+                <img src={githubIcon} alt="GitHub" className="inline w-6 h-6 align-middle"></img>
+            </a>
+            <a className="nav-link" href="mailto:larissabrasil009@gmail.com" target="_blank">
+                <img src={emailIcon} alt="Gmail" className="inline w-6 h-6 align-middle"></img>
+            </a>
+            <a className="nav-link" href="https://www.linkedin.com/in/brasil-larissa/" target="_blank">
+                <img src={linkedinIcon} alt="Linkedin" className="inline w-6 h-6 align-middle"></img>
+            </a>
+        </nav>
+
+        &copy;  {new Date().getFullYear()} Larissa Brasil. Todos os direitos reservados.
     </footer>
   );
 }
