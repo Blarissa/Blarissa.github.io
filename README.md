@@ -20,8 +20,7 @@ src/
 ├── components/          # Componentes React
 │   ├── Header.tsx       # Navegação principal
 │   ├── Footer.tsx       # Rodapé com links sociais
-│   ├── ProjectCard.tsx  # Card de projetos
-│   └── About.tsx        # Seção sobre
+│   └── ProjectCard.tsx  # Card de projetos
 ├── data/
 │   └── curriculo.data.ts # Dados do currículo
 ├── App.tsx              # Componente principal
