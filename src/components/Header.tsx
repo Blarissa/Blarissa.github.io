@@ -9,7 +9,7 @@ function Header() {
         <div className="max-w-7xl mx-auto flex justify-between items-center text-[var(--primary-700)] m-0">
           <h2 className="text-lg sm:text-xl md:text-2xl">blarissa</h2>
           
-          {/* Botão hamburger para mobile */}
+          {}
           <button
             className="md:hidden flex flex-col gap-1 w-8 h-8 justify-center items-center"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -20,7 +20,6 @@ function Header() {
             <span className={`hamburger-line ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
           </button>
 
-          {/* Menu desktop */}
           <div className="hidden md:flex space-x-4 lg:space-x-6 text-sm lg:text-base">
             <a href="#home" className="nav-link">home</a>
             <a href="#about" className="nav-link">about</a>
@@ -30,7 +29,6 @@ function Header() {
           </div>
         </div>
 
-        {/* Menu mobile */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 flex flex-col space-y-3 text-center pb-4">
             <a href="#home" onClick={() => setIsMenuOpen(false)} className="nav-link">home</a>

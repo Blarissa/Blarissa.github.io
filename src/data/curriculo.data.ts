@@ -12,32 +12,6 @@ export interface TechnicalCompetence {
   icon: string;
 }
 
-export interface Language {
-  language: string;
-  level: string;
-}
-
-export interface Experience {
-  position: string;
-  company: string;
-  period: string;
-  activities: string[];
-}
-
-export interface Education {
-  course: string;
-  institution: string;
-  period: string;
-}
-
-export interface Course {
-  title: string;
-  institution: string;
-  date?: string;
-  period?: string;
-  workload?: string;
-}
-
 export interface Project {
   name: string;
   description: string;

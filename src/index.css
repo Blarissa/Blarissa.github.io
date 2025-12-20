@@ -36,58 +36,47 @@ nav h2 {
 }
 
 @layer components {
-  /* Padding horizontal responsivo para seções */
   .section-padding-x {
     @apply px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32;
   }
 
-  /* Padding vertical responsivo para seções */
   .section-padding-y {
     @apply py-8 md:py-12 lg:py-16;
   }
 
-  /* Padding completo para seções */
   .section-padding {
     @apply px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-8 md:py-12 lg:py-16;
   }
 
-  /* Links de navegação com hover */
   .nav-link {
     @apply hover:text-[var(--primary-500)] transition-colors;
   }
 
-  /* Linha do menu hamburger */
   .hamburger-line {
     @apply w-6 h-0.5 bg-[var(--primary-700)] transition-all;
   }
 
-  /* Container da seção */
   .section-container {
     @apply w-full mx-auto px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-8 md:py-12 lg:py-16 bg-white;
   }
 
-  /* Título de seção */
   .section-title {
     @apply font-bold text-[var(--primary-600)] pb-8 text-2xl sm:text-3xl lg:text-4xl;
   }
 
-  /* Card com borda customizada */
   .card-border {
     @apply border-[3px] border-t-[var(--primary-200)] border-l-[var(--primary-200)] 
            border-r-[6px] border-b-[6px] rounded-[3rem] p-4;
   }
 
-  /* Imagem de ícone responsiva */
   .icon-img {
     @apply w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24;
   }
 
-  /* Texto do corpo responsivo */
   .body-text {
     @apply text-sm sm:text-base text-[var(--gray-600)] leading-relaxed;
   }
 
-  /* Card de projeto */
   .project-card {
     @apply bg-[var(--primary-100)] md:bg-white border-[3px] border-t-[var(--primary-200)]
     border-l-[var(--primary-200)] border-r-[var(--primary-300)] border-b-[var(--primary-300)] border-r-[6px] border-b-[6px] rounded-[3rem] p-4 
@@ -95,7 +84,6 @@ nav h2 {
     flex-col justify-center hover:shadow-md;
   }
 
-  /* Sombra superior */
   .shadow-top {
     @apply shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)];
   }
