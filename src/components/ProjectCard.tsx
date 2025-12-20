@@ -2,24 +2,21 @@ import type { Project } from "../data/curriculo.data";
 
 function ProjectCard({ title, projects }: { title: string; projects: Project[] }) { 
   return (
-    <div className="w-full mx-auto px-[100px] py-8 bg-white">
+    <div className="section-container">
       <h2 className="section-title">{title}</h2>
-      <div className="bg-white w-full max-w-none mx-auto grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
+      <div className="w-full max-w-none mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="border-2 border-[var(--primary-100)] rounded-xl shadow-sm hover:bg-[var(--primary-100)] transition-colors duration-300 flex flex-col justify-center hover:shadow-md"
-          >
-            <a href={project.link} target="_blank">
-              <div className="grid grid-cols-[1fr_auto] gap-8 p-4">
+          <div key={index} className="project-card">
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-4 sm:gap-6 md:gap-8 p-4 sm:p-6">
                 <div className="grid grid-rows-[auto_auto_auto] gap-2">
-                  <h3 className="text-lg text-[var(--primary-700)] mb-2 font-semibold">
+                  <h3 className="text-base sm:text-lg text-[var(--primary-700)] mb-2 font-semibold">
                     {project.name}
                   </h3>
-                  <p className="text-sm text-[var(--gray-600)] mb-2">
+                  <p className="text-xs sm:text-sm text-[var(--gray-600)] mb-2">
                     {project.description}
                   </p>
-                  <ul className="text-sm text-[var(--gray-600)]">
+                  <ul className="text-xs sm:text-sm text-[var(--gray-600)]">
                     {project.technologies.map((technology, index) => (
                       <li key={index} className="inline">
                         {technology}
@@ -33,7 +30,7 @@ function ProjectCard({ title, projects }: { title: string; projects: Project[] }
                   <img
                     src={`/src/assets/images/icons/${project.icon}`}
                     alt={project.name}
-                    className="w-[80px] h-[80px] rounded-full shadow-md"
+                    className="w-16 h-16 sm:w-20 sm:h-20 rounded-full shadow-md"
                   ></img>
                 </div>
               </div>
