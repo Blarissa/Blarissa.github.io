@@ -1,73 +1,112 @@
-# React + TypeScript + Vite
+# Portfolio - Larissa Brasil
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio pessoal desenvolvido com React, TypeScript e Tailwind CSS, apresentando projetos, experiências e habilidades técnicas.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 18** - Biblioteca JavaScript para interfaces
+- **TypeScript** - Superset tipado do JavaScript
+- **Tailwind CSS** - Framework CSS utility-first
+- **Vite** - Build tool e dev server
+- **Yarn** - Gerenciador de pacotes
 
-## React Compiler
+## 📁 Estrutura do Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── assets/
+│   ├── fonts/           # Fontes customizadas
+│   └── images/          # Imagens e ícones
+├── components/          # Componentes React
+│   ├── Header.tsx       # Navegação principal
+│   ├── Footer.tsx       # Rodapé com links sociais
+│   ├── ProjectCard.tsx  # Card de projetos
+│   └── About.tsx        # Seção sobre
+├── data/
+│   └── curriculo.data.ts # Dados do currículo
+├── App.tsx              # Componente principal
+├── index.css            # Estilos globais e classes customizadas
+└── main.tsx             # Ponto de entrada
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎨 Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Design responsivo (mobile, tablet, desktop)
+- Menu hamburger animado para mobile
+- Sistema de design com variáveis CSS customizadas
+- Classes Tailwind reutilizáveis
+- Tipagem completa com TypeScript
+- Link para download de currículo em PDF
+- Cards de projetos com hover effects
+- Seção de tecnologias com ícones
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Como Executar
+
+### Pré-requisitos
+
+- Node.js 18+
+- Yarn
+
+### Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/Blarissa/Blarissa.github.io.git
+
+# Entre na pasta do projeto
+cd Blarissa.github.io
+
+# Instale as dependências
+yarn install
+
+# Execute em modo de desenvolvimento
+yarn dev
 ```
+
+O projeto estará disponível em `http://localhost:5173`
+
+### Build para Produção
+
+```bash
+# Gerar build otimizado
+yarn build
+
+# Preview do build
+yarn preview
+```
+
+## 🎨 Classes CSS Customizadas
+
+O projeto utiliza classes customizadas com Tailwind para maior reutilização:
+
+- `.section-padding` - Padding responsivo para seções
+- `.section-title` - Estilo de títulos de seção
+- `.nav-link` - Links de navegação com hover
+- `.project-card` - Cards de projetos
+- `.icon-img` - Ícones responsivos
+- `.body-text` - Texto padrão
+- `.shadow-top` - Sombra superior
+
+## 📝 Variáveis de Cores
+
+```css
+--primary-700: #1c185f;
+--primary-600: #3730a3;
+--primary-500: #5454cd;
+--primary-400: #817edd;
+--primary-300: #aaa8e9;
+--primary-200: #dad3fe;
+--primary-100: #f0f0fb;
+--gray-600: #232328;
+--gray-100: #d5d5d8;
+```
+
+## 📄 Licença
+
+© 2025 Larissa Brasil. Todos os direitos reservados.
+
+## 🔗 Links
+
+- [LinkedIn](https://www.linkedin.com/in/brasil-larissa/)
+- [GitHub](https://github.com/Blarissa)
+- Email: larissabrasil009@gmail.com
