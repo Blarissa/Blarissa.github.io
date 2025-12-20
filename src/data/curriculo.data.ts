@@ -1,3 +1,23 @@
+import reactIcon from "../assets/images/icons/react.png";
+import typescriptIcon from "../assets/images/icons/typescript.png";
+import javascriptIcon from "../assets/images/icons/javascript.png";
+import htmlIcon from "../assets/images/icons/html5.png";
+import cssIcon from "../assets/images/icons/css3.png";
+import gitIcon from "../assets/images/icons/git.png";
+import figmaIcon from "../assets/images/icons/figma.png";
+import angularIcon from "../assets/images/icons/angular.png";
+import bootstrapIcon from "../assets/images/icons/bootstrap.png";
+import mysqlIcon from "../assets/images/icons/mysql.png";
+import postgresqlIcon from "../assets/images/icons/postgresql.png";
+import tailwindcssIcon from "../assets/images/icons/tailwindcss.png";
+import springBootIcon from "../assets/images/icons/spring-boot.png";
+import javaIcon from "../assets/images/icons/java.png";
+import pythonIcon from "../assets/images/icons/python.png";
+import dotnetIcon from "../assets/images/icons/dotnet.png";
+import cSharpIcon from "../assets/images/icons/c-sharp.png";
+import awsIcon from "../assets/images/icons/aws.png";
+
+
 export interface Contact {
   name: string;
   location: string;
@@ -51,27 +71,27 @@ export const curriculoLarissa: Resume = {
       "contribute significantly to the advancement of the field.",
   ],
   technical_skills: [
-    { technology: "C#", icon: "c-sharp.png" },
-    { technology: "Java", icon: "java.png" },
-    { technology: "Python", icon: "python.png" },
-    { technology: "JavaScript", icon: "javascript.png" },
-    { technology: "Typescript", icon: "typescript.png" },
-    { technology: "Angular", icon: "angular.png" },
-    { technology: "React", icon: "react.png" },
-    { technology: ".NET", icon: "dotnet.png" },
-    { technology: "Spring Boot", icon: "spring-boot.png" },
-    { technology: "PostgreSQL", icon: "postgresql.png" },
-    { technology: "MySQL", icon: "mysql.png" },
-    { technology: "Git", icon: "git.png" },
+    { technology: "C#", icon: cSharpIcon },
+    { technology: "Java", icon: javaIcon },
+    { technology: "Python", icon: pythonIcon },
+    { technology: "JavaScript", icon: javascriptIcon },
+    { technology: "Typescript", icon: typescriptIcon },
+    { technology: "Angular", icon: angularIcon },
+    { technology: "React", icon: reactIcon },
+    { technology: ".NET", icon: dotnetIcon },
+    { technology: "Spring Boot", icon: springBootIcon },
+    { technology: "PostgreSQL", icon: postgresqlIcon },
+    { technology: "MySQL", icon: mysqlIcon },
+    { technology: "Git", icon: gitIcon },
     {
       technology: "Amazon Web Services (AWS)",
-      icon: "aws.png",
+      icon: awsIcon,
     },
-    { technology: "Tailwind CSS", icon: "tailwind-css.png" },
-    { technology: "Bootstrap", icon: "bootstrap.png" },
-    { technology: "HTML", icon: "html5.png" },
-    { technology: "CSS", icon: "css3.png" },
-    { technology: "Figma", icon: "figma.png" },
+    { technology: "Tailwind CSS", icon: tailwindcssIcon },
+    { technology: "Bootstrap", icon: bootstrapIcon },
+    { technology: "HTML", icon: htmlIcon },
+    { technology: "CSS", icon: cssIcon },
+    { technology: "Figma", icon: figmaIcon },
   ],
 
   projects: [
