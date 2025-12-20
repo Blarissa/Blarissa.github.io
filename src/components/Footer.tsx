@@ -6,8 +6,8 @@ import '../index.css';
 function Footer() {
   return (
     <footer
-        className="bg-[var(--primary-100)] shadow-md p-4 px-[150px] text-center text-sm text-[var(--primary-700)]">
-        <nav className="nav">
+        className="flex flex-col gap-2 justify-center items-center bg-[var(--primary-100)] shadow-md p-4 px-[150px] text-center text-sm text-[var(--primary-700)]">
+        <nav className="nav grid grid-cols-3 gap-4 justify-center w-fit">
             <a className="nav-link" href="https://github.com/Blarissa" target="_blank">
                 <img src={githubIcon} alt="GitHub" className="inline w-6 h-6 align-middle"></img>
             </a>
@@ -19,7 +19,7 @@ function Footer() {
             </a>
         </nav>
 
-        &copy;  {new Date().getFullYear()} Larissa Brasil. Todos os direitos reservados.
+        &copy;  {new Date().getFullYear()} Larissa Brasil. All rights reserved.
     </footer>
   );
 }
