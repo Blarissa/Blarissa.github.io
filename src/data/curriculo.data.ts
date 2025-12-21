@@ -113,7 +113,7 @@ export const curriculoLarissa: Resume = {
         "JavaScript",
         "Tailwind CSS",
       ],
-      link: "[https://github.com/Blarissa/trabalho-final-larissa-brasil](https://github.com/Blarissa/trabalho-final-larissa-brasil)",
+      link: "https://github.com/Blarissa/trabalho-final-larissa-brasil",
       icon: setasIcon,
     },
     {

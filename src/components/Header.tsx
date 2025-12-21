@@ -5,7 +5,7 @@ function Header() {
 
   return (
     <header>
-      <nav className="bg-white shadow-md p-4 section-padding-x sticky top-0 z-50">
+      <nav className="bg-white shadow-md p-4 section-padding-x fixed top-0 z-50 w-full">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-[var(--primary-700)] m-0">
           <h2 className="text-lg sm:text-xl md:text-2xl">blarissa</h2>
           
