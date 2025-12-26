@@ -1,9 +1,13 @@
 import githubIcon from "../assets/images/icons/github.png";
 import emailIcon from "../assets/images/icons/gmail.png";
 import linkedinIcon from "../assets/images/icons/linkedin.png";
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../locales";
 import '../index.css';
 
 function Footer() {
+  const { language } = useLanguage();
+  const t = translations[language];
   return (
     <footer
         className="flex flex-col gap-3 sm:gap-4 justify-center items-center bg-[var(--primary-100)] shadow-top p-4 sm:p-6 section-padding-x text-center text-xs sm:text-sm text-[var(--primary-700)]">
@@ -19,7 +23,7 @@ function Footer() {
             </a>
         </nav>
 
-        <p className="text-center">&copy;  {new Date().getFullYear()} Larissa Brasil. All rights reserved.</p>
+        <p className="text-center">&copy; {new Date().getFullYear()} Larissa Brasil. {t.footer.rights}</p>
     </footer>
   );
 }
