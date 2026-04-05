@@ -19,6 +19,10 @@
   --gray-100: #d5d5d8;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Cascadia Mono", monospace;
 }
@@ -36,6 +40,10 @@ nav h2 {
 }
 
 @layer components {
+  .anchor-section {
+    scroll-margin-top: 6rem;
+  }
+
   .section-padding-x {
     @apply px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32;
   }
@@ -48,8 +56,32 @@ nav h2 {
     @apply px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-8 md:py-12 lg:py-16;
   }
 
-  .nav-link, .language {
-    @apply hover:text-[var(--primary-500)] transition-colors;
+  .nav-link {
+    @apply transition-colors hover:text-[var(--primary-500)];
+  }
+
+  .nav-link,
+  .language-button,
+  .menu-button,
+  .project-link,
+  .social-link {
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary-600)];
+  }
+
+  .language-button {
+    @apply rounded-full px-1 py-0.5;
+  }
+
+  .menu-button {
+    @apply rounded-md;
+  }
+
+  .project-link {
+    @apply block rounded-[2rem];
+  }
+
+  .social-link {
+    @apply rounded-full p-1;
   }
 
   .hamburger-line {
@@ -65,8 +97,7 @@ nav h2 {
   }
 
   .card-border {
-    @apply border-[3px] border-t-[var(--primary-200)] border-l-[var(--primary-200)] 
-           border-r-[6px] border-b-[6px] rounded-[3rem] p-4;
+    @apply border-[3px] border-t-[var(--primary-200)] border-l-[var(--primary-200)] border-r-[6px] border-b-[6px] rounded-[3rem] p-4;
   }
 
   .icon-img {
@@ -78,10 +109,7 @@ nav h2 {
   }
 
   .project-card {
-    @apply bg-[var(--primary-100)] md:bg-white border-[3px] border-t-[var(--primary-200)]
-    border-l-[var(--primary-200)] border-r-[var(--primary-300)] border-b-[var(--primary-300)] border-r-[6px] border-b-[6px] rounded-[3rem] p-4 
-    shadow-sm md:hover:bg-[var(--primary-100)] transition-colors duration-300 flex 
-    flex-col justify-center hover:shadow-md;
+    @apply bg-[var(--primary-100)] md:bg-white border-[3px] border-t-[var(--primary-200)] border-l-[var(--primary-200)] border-r-[var(--primary-300)] border-b-[var(--primary-300)] border-r-[6px] border-b-[6px] rounded-[3rem] p-4 shadow-sm md:hover:bg-[var(--primary-100)] transition-colors duration-300 flex flex-col justify-center hover:shadow-md;
   }
 
   .shadow-top {
@@ -89,11 +117,28 @@ nav h2 {
   }
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.25rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fade-in 200ms ease-out;
+}
+
 @media print {
   body {
     background: white !important;
     padding: 0 !important;
   }
+
   .container {
     box-shadow: none !important;
     max-width: none !important;

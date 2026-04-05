@@ -36,9 +36,15 @@ export interface TechnicalCompetence {
   icon: string;
 }
 
+export type ProjectId =
+  | "regex-to-enfa"
+  | "nft-art-dapp"
+  | "dorothy-website"
+  | "library-system"
+  | "dental-clinic-system";
+
 export interface Project {
-  name: string;
-  description: string;
+  id: ProjectId;
   technologies: string[];
   link: string;
   icon: string;
@@ -97,14 +103,9 @@ export const curriculoLarissa: Resume = {
     { technology: "CSS", icon: cssIcon },
     { technology: "Figma", icon: figmaIcon },
   ],
-
   projects: [
     {
-      name: "Regular Expression to ε-NFA Converter",
-      description:
-        "Theory of Computation project that implements the conversion " +
-        "from Regular Expressions to Non-Deterministic Finite Automata with " +
-        "epsilon transitions using Thompson's Construction.",
+      id: "regex-to-enfa",
       technologies: [
         "Python",
         "Flask",
@@ -117,11 +118,7 @@ export const curriculoLarissa: Resume = {
       icon: setasIcon,
     },
     {
-      name: "NFT Art Tokenization DApp",
-      description:
-        "Decentralized Application for the tokenization of Van Gogh's " +
-        "'Almond Blossom' artwork. It demonstrates how a physical asset can be represented as an NFT on the " +
-        "Ethereum blockchain with minting and transfer operations.",
+      id: "nft-art-dapp",
       technologies: [
         "Solidity",
         "JavaScript",
@@ -130,33 +127,24 @@ export const curriculoLarissa: Resume = {
         "Tailwind CSS",
         "MetaMask",
         "Ethereum",
-        ],
-        link: "https://github.com/Blarissa/DApp-Tokenizacao-Arte-AmendoeiraEmFlor",
+      ],
+      link: "https://github.com/Blarissa/DApp-Tokenizacao-Arte-AmendoeiraEmFlor",
       icon: arteIcon,
     },
     {
-      name: "Dorothy Piauí Project Website",
-      description:
-        "Informative website about the Dorothy Piauí project, which promotes the inclusion of " +
-        "women in technology through courses, workshops, and events.",
+      id: "dorothy-website",
       technologies: ["HTML", "CSS", "JavaScript", "Angular"],
       link: "https://github.com/Dorothy-Piaui/Dorothy-Piaui.github.io",
       icon: dorothyIcon,
     },
     {
-      name: "Library System",
-      description:
-        "Console application in C# for complete library management, including " +
-        "registration of books and readers, loan and return control with a search system.",
+      id: "library-system",
       technologies: ["C#", ".NET"],
       link: "https://github.com/Blarissa/Biblioteca",
       icon: bibliotecaIcon,
     },
     {
-      name: "Dental Clinic System",
-      description:
-        "Dental clinic management system with data persistence " +
-        "using Entity Framework, implementing object-relational mapping with LINQ and PostgreSQL.",
+      id: "dental-clinic-system",
       technologies: ["C#", ".NET", "Entity Framework", "PostgreSQL", "LINQ"],
       link: "https://github.com/Blarissa/PersistenciaConsultorioOdontologico",
       icon: denteIcon,
