@@ -29,12 +29,12 @@ body {
 
 h1,
 h2,
-nav a {
+.nav-link {
   font-family: "Bayer TypeArchiType", sans-serif;
   font-weight: 600;
 }
 
-nav a,
+.nav-link,
 nav h2 {
   font-size: medium;
 }
@@ -57,7 +57,7 @@ nav h2 {
   }
 
   .nav-link {
-    @apply transition-colors hover:text-[var(--primary-500)];
+    @apply cursor-pointer border-0 bg-transparent transition-colors hover:text-[var(--primary-500)];
   }
 
   .nav-link,
@@ -146,3 +146,4 @@ nav h2 {
     padding: 1rem !important;
   }
 }
+

@@ -1,4 +1,4 @@
-import type { ProjectId } from "../data/curriculo.data";
+import type { ExperienceId, ProjectId } from "../data/curriculo.data";
 
 const projectItems: Record<ProjectId, { name: string; description: string }> = {
   "regex-to-enfa": {
@@ -79,6 +79,31 @@ export const pt = {
   },
   technologies: {
     title: "tecnologias",
+  },
+  resume: {
+    professionalExperiences: {
+      "medsafe-brasil": {
+        role: "Estagiária de Desenvolvimento Full Stack",
+        description: [
+          "Desenvolvimento full stack utilizando Angular, Java e Spring Boot.",
+          "Apoio na análise de requisitos, implementação de funcionalidades, testes de software, documentação técnica e manutenção de sistemas.",
+        ],
+      },
+      "sti-ufpi": {
+        role: "Bolsista de Desenvolvimento",
+        description: [
+          "Manutenção evolutiva e corretiva em sites institucionais da UFPI, desenvolvidos com diferentes linguagens e tecnologias.",
+          "Apoio no desenvolvimento de novas funcionalidades, ajustes de layout, correção de bugs e melhorias de usabilidade, garantindo o funcionamento, a acessibilidade e a padronização dos sistemas web da universidade.",
+        ],
+      },
+      focare: {
+        role: "Desenvolvedora Full Stack",
+        description: [
+          "Atuação no desenvolvimento e na evolução de soluções web empresariais, participando de todas as etapas do ciclo de desenvolvimento de software.",
+          "Responsável pela implementação de novas funcionalidades, correção de bugs, manutenção evolutiva e corretiva, criação e otimização de consultas SQL e melhoria contínua dos sistemas.",
+        ],
+      },
+    } satisfies Record<ExperienceId, { role: string; description: string[] }>,
   },
   footer: {
     rights: "Todos os direitos reservados.",

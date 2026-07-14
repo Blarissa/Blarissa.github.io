@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
+import { curriculoLarissa } from "../data/curriculo.data";
 import { translations } from "../locales";
-
-const resumePath = "/Curriculo - Larissa dos Santos Brasil.pdf";
+import { generateResumePdf } from "../utils/resumePdf";
 
 interface LanguageSelectorProps {
   language: "pt" | "en";
@@ -65,6 +65,10 @@ function Header() {
   ];
 
   const closeMenu = () => setIsMenuOpen(false);
+  const handleResumeClick = () => {
+    generateResumePdf(curriculoLarissa, t, language);
+    closeMenu();
+  };
 
   return (
     <header>
@@ -82,14 +86,13 @@ function Header() {
                   {item.label}
                 </a>
               ))}
-              <a
-                href={resumePath}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
+                onClick={handleResumeClick}
                 className="nav-link px-2 py-1"
               >
                 {t.nav.resume}
-              </a>
+              </button>
             </div>
             <LanguageSelector
               language={language}
@@ -146,15 +149,13 @@ function Header() {
                 {item.label}
               </a>
             ))}
-            <a
-              href={resumePath}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeMenu}
+            <button
+              type="button"
+              onClick={handleResumeClick}
               className="nav-link py-1"
             >
               {t.nav.resume}
-            </a>
+            </button>
           </div>
         )}
       </nav>

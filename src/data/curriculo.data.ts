@@ -55,6 +55,19 @@ export interface Resume {
   about: string[];
   technical_skills: TechnicalCompetence[];
   projects: Project[];
+  professional_experiences: Experience[];
+}
+
+export type ExperienceId = "medsafe-brasil" | "sti-ufpi" | "focare";
+
+export interface Experience {
+  id: ExperienceId;
+  company: string;
+  location: string;
+  role: string;
+  startDate: string;
+  endDate: string | null;
+  description: string[];
 }
 
 export const curriculoLarissa: Resume = {
@@ -150,4 +163,51 @@ export const curriculoLarissa: Resume = {
       icon: denteIcon,
     },
   ],
+  professional_experiences: [
+    {
+      id: "medsafe-brasil",
+      company: "Medsafe Brasil",
+      role: "Full Stack Development Intern", 
+      startDate: "2025-02-26",
+      endDate: "2026-04-05",
+      description: [
+        "Full-stack development using Angular, Java, and Spring Boot.",
+        "Support in requirements analysis, feature implementation, " +
+        "software testing, technical documentation, and system maintenance."
+      ],
+      location: "Teresina, PI"
+    },
+    {
+      id: "sti-ufpi",
+      company: " STI - UFPI (Superintendência de Tecnologia da Informação da Universidade Federal do Piauí)",
+      //Bolsilsta de desenvolvimento
+      role: "Development Scholarship Holder",
+      startDate: "2025-09-01",
+      endDate: null,
+      description: [
+        "Performed evolutionary and corrective maintenance on UFPI's institutional websites, " +
+        "developed using various languages and technologies",
+        "Supported the development of new features, layout adjustments, " + 
+        "bug fixes, and usability improvements, ensuring the " +
+        "proper functioning, accessibility, and standardization of the university's web systems."
+      ],
+      location: "Teresina, PI"
+    },
+    {
+      id: "focare",
+      company: "Focare Tecnologia em Soluções",
+      role: "Full Stack Developer",
+      startDate: "2026-04-27",
+      endDate: null,
+      description: [
+        "Involved in the development and evolution of enterprise web solutions, " + 
+        "participating in all stages of the software development lifecycle.",
+        "Responsible for implementing new features, fixing bugs, performing " + 
+        "evolutionary and corrective maintenance, creating and optimizing SQL " + 
+        "queries, and continuously improving systems."
+      ],
+      location: "São Paulo, SP"
+    }
+  ] 
 };
+
